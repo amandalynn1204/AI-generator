@@ -37,6 +37,7 @@ form input {
 form input.search {
   width: 75%;
   border: 1px solid rgb(100, 100, 100);
+  background-color: white;
 }
 
 form input.search-btn {
@@ -96,6 +97,10 @@ footer a:hover {
   }
   form input.search-btn {
     margin: 5px 0 0;
+  }
+
+  form p {
+    font-size: 14px;
   }
 
   .poem {
