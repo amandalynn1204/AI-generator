@@ -7,32 +7,36 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter a topic for the poem.."
-          required
-        />
-        <input type="submit" value="Search" />
-        <p>e.i. trees, food, friendship</p>
-      </form>
-      <div>
-        Loveliest of trees, the cherry now
-        <br />
-        Is hung with bloom along the bough,
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/amandalynn1204">Amanda Ludwick</a> and is
-      <a href="https://github.com/amandalynn1204/AI-generator" target="_blank"
-        >open-sourced on GitHub</a
-      >
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a topic for the poem.."
+            required
+            class="search"
+          />
+          <input type="submit" value="Search" class="search-btn" />
+          <p>e.i. trees, food, friendship</p>
+        </form>
+        <div class="poem">
+          Loveliest of trees, the cherry now
+          <br />
+          Is hung with bloom along the bough
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/amandalynn1204">Amanda Ludwick</a> and is
+        <a href="https://github.com/amandalynn1204/AI-generator" target="_blank"
+          >open-sourced on GitHub</a
+        >
+      </footer>
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>

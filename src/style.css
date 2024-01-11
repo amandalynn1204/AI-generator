@@ -1,8 +1,104 @@
+:root {
+  --primary-color: rgb(135, 105, 90);
+  --secondary-color: rgb(108, 82, 70);
+  --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url(../images/crinkled-paper.jpg);
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+form {
+  margin-bottom: 30px;
+  padding: 30px 30px 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+}
+
+form input {
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 50px;
+}
+
+form input.search {
+  width: 75%;
+  border: 1px solid rgb(100, 100, 100);
+}
+
+form input.search-btn {
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  width: 120px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+form input.search-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+form p {
+  margin: 8px 0 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
 footer a {
   text-decoration: none;
-  color: blue;
+  color: var(--secondary-color);
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.container {
+  margin: 80px auto;
+  max-width: 600px;
+}
+
+.poem {
+  padding: 30px;
+  background-color: white;
+  font-size: 20px;
+  line-height: 1.5;
+  border-left: 3px solid var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+@media (max-width: 650px) {
+  body {
+    margin: auto 20px;
+  }
+  form input.search,
+  form input.search-btn {
+    display: block;
+    width: 100%;
+  }
+  form input.search-btn {
+    margin: 5px 0 0;
+  }
+
+  .poem {
+    font-size: 16px;
+  }
 }
