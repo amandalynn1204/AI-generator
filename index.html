@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
   </head>
@@ -18,7 +19,9 @@
             type="search"
             placeholder="Enter a topic for the poem.."
             required
+            autocomplete="off"
             class="search"
+            id="keyword-input"
           />
           <input type="submit" value="Search" class="search-btn" />
           <p>e.i. trees, food, friendship</p>

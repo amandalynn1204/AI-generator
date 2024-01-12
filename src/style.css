@@ -105,5 +105,8 @@ footer a:hover {
 
   .poem {
     font-size: 16px;
+    color: black;
+    font-weight: 400;
+    font-style: normal;
   }
 }
