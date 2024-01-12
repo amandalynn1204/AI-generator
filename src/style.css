@@ -80,10 +80,23 @@ footer a:hover {
 .poem {
   padding: 30px;
   background-color: white;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
   font-size: 20px;
   line-height: 1.5;
   border-left: 3px solid var(--primary-color);
   box-shadow: var(--box-shadow);
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 650px) {
@@ -105,8 +118,5 @@ footer a:hover {
 
   .poem {
     font-size: 16px;
-    color: black;
-    font-weight: 400;
-    font-style: normal;
   }
 }
